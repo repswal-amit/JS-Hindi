@@ -38,3 +38,28 @@ console.log(typeof id);
 console.log(typeof heros);
 console.log(typeof myObj);
 console.log(typeof myfunction);
+
+// +++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+// Stack(Primitive) and Heap(Reference/Non-Primitive)
+
+let myYouTubeChannel = "CodeWithAmit"
+let anotherChannel = myYouTubeChannel
+
+console.log(myYouTubeChannel);
+console.log(anotherChannel);
+
+let userOne = {
+    email : "user1@example.com",
+    upi: "user1@upi"
+}
+
+let userTwo = userOne
+
+console.log(userOne);
+console.log(userTwo);
+
+userTwo.email = "user2@example.com"
+
+console.log(userOne.email);
+console.log(userTwo.email);
